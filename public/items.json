@@ -1,0 +1,92 @@
+[
+    {
+      "_id": "62766eb430e5c7eb92c993c0",
+      "picture": "https://i.ibb.co/0KF0kWp/jus.png",
+      "price": 333,
+      "name": "Mango Juice",
+      "quantity": 957,
+      "description": "Pran mango juice is a very interesting juice. There is a good demand for this juice in the market",
+      "supplierName": "Pran Group"
+    },
+    {
+      "_id": "62766eb43ebbe0cba36536f4",
+      "picture": "https://i.ibb.co/kGFmPr0/chaul.png",
+      "price": 160,
+      "name": "Nabil Rice",
+      "quantity": 389,
+      "description": "Nabil rice is a very good quality rice. People have confidence in this rice and its sales are also good",
+      "supplierName": "Nabil Group"
+    },
+    {
+      "_id": "62766eb4c18837b11c4a87c2",
+      "picture": "https://i.ibb.co/yPhqPGL/pusti-chinigura-rice-1-kg.png",
+      "price": 164,
+      "name": "Pusti Rice",
+      "quantity": 589,
+      "description": "Pusti Rice is a product of TK Group. TK Group has been working with honor for a long time. This company has good demand for its products",
+      "supplierName": "T.K. Group"
+    },
+    {
+      "_id": "62766eb4e47171a093ab7d8f",
+      "picture": "https://i.ibb.co/Y3MBPRT/atta.png",
+      "price": 117,
+      "name": "Bashundhara Ata",
+      "quantity": 337,
+      "description": "Bashundhara flour is a very good quality flour and there is a demand for it in the market",
+      "supplierName": "Bashundhara Group"
+    },
+    {
+      "_id": "62766eb40559585f3e38dfaf",
+      "picture": "https://i.ibb.co/5hD74B4/pusti-atta-1-kg-pmart-gc70014.png",
+      "price": 134,
+      "name": "Pusti Ata",
+      "quantity": 174,
+      "description": "Pusti Ata is another product of T.K. group. and it is a very good quality flour and there is a demand for it in the market",
+      "supplierName": "T.K. Group"
+    },
+    {
+      "_id": "62766eb4abfae3278b836314",
+      "picture": "https://i.ibb.co/gdTt72X/sorisa-5lt.png",
+      "price": 776,
+      "name": "Pusti mustard oil 5 Litter",
+      "quantity": 389,
+      "description": "Pusti mustard oil is a very good quality flour and there is a demand for it in the market",
+      "supplierName": "T.K. Group"
+    },
+    {
+      "_id": "62766eb46000865c44f67d86",
+      "picture": "https://i.ibb.co/SNRjkR2/soris1ltr.png",
+      "price": 376,
+      "name": "Pusti mustard oil 2 Litter",
+      "quantity": 100,
+      "description": "Pusti mustard oil is another product of T.K. group. and it is a very good quality flour and there is a demand for it in the market",
+      "supplierName": "T.K. Group"
+    },
+    {
+      "_id": "62766eb491d1b14604ccfa46",
+      "picture": "https://i.ibb.co/SKcD0V5/soyabin-1lt.png",
+      "price": 157,
+      "name": "Pusti Soybean oil 1 Litter",
+      "quantity": 891,
+      "description": "Pusti soybean oil is another product of T.K. group. and it is a very good quality flour and there is a demand for it in the market",
+      "supplierName": "T.K. Group"
+    },
+    {
+      "_id": "62766eb48b522335e0b6b3cc",
+      "picture": "https://i.ibb.co/gFdF1ST/7soyabin-5lt.png",
+      "price": 716,
+      "name": "Pusti Soybean oil 5 Litter",
+      "quantity": 340,
+      "description": "Pusti soybean oil is another product of T.K. group. and it is a very good quality flour and there is a demand for it in the market",
+      "supplierName": "T.K. Group"
+    },
+    {
+      "_id": "62766eb49d8906fd4e3bd369",
+      "picture": "https://i.ibb.co/zFj1YBr/0003266-pusti-soyabean-oil-2l-2048-1.png",
+      "price": 415,
+      "name": "Pusti Soybean oil 2 Litter",
+      "quantity": 198,
+      "description": "Pusti soybean oil is another product of T.K. group. and it is a very good quality flour and there is a demand for it in the market",
+      "supplierName": "T.K. Group"
+    }
+  ]
