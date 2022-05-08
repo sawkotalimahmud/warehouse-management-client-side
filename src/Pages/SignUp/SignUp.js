@@ -47,7 +47,7 @@ const SignUp = () => {
     }
   
     const navigateLogin = (event) => {
-      navigate("/login");
+      navigate("/home");
     };
   return (
     <div className="container w-50 mx-auto mt-5">

@@ -14,7 +14,7 @@ const Products = () => {
     return (
         <div className=' row '>
             
-           <div className='product-container'>
+           <div className='product-container mt-3'>
            {
                 products.map(product => <Product
                 key={product._id}

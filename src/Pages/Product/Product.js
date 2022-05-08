@@ -14,11 +14,14 @@ const Product = ({ product }) => {
           <Card.Title>{name}</Card.Title>
           <Card.Text>Price: ${price}</Card.Text>
           <Card.Text>Quantity: {quantity}</Card.Text>
-          <Card.Text>
-            {description}
-          </Card.Text>
+          <Card.Text>{description}</Card.Text>
           <Card.Text>Supplier: {supplierName}</Card.Text>
-          <Link to={`/products/${_id}`}><button>Stock Update</button></Link>
+          <div className="d-flex justify-content-between">
+            <Link to={`/products/${_id}`}>
+              <button>Stock Update</button>
+            </Link>
+            <button>Delete Item</button>
+          </div>
         </Card.Body>
       </Card>
     </div>
