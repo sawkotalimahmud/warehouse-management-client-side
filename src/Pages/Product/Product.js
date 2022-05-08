@@ -1,10 +1,29 @@
-import React from "react";
+import React, { useState } from 'react';
 import { Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 const Product = ({ product }) => {
   const { _id, picture, price, name, quantity, description, supplierName } =
     product;
+
+    const [products, setProducts] = useState([]);
+    const handleDelete = id => {
+      const proceed = window.confirm('Are You Sure?')
+
+      if (proceed){
+          const url = `http://localhost:5000/products/${_id}`;
+          fetch(url, {
+              method: 'DELETE'
+          })
+          .then(res => res.json())
+          .then(data => {
+              console.log(data);
+              const remaining = products.filter(product => product._id !== id);
+              setProducts(remaining);
+          });
+      }
+  }
+    
 
   return (
     <div className="container">
@@ -20,7 +39,7 @@ const Product = ({ product }) => {
             <Link to={`/products/${_id}`}>
               <button>Stock Update</button>
             </Link>
-            <button>Delete Item</button>
+            <button onClick={()=> handleDelete(product._id)}>Delete Item</button>
           </div>
         </Card.Body>
       </Card>

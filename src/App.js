@@ -11,6 +11,7 @@ import PageNotFound from "./Pages/Sheard/PageNotFound/PageNotFound";
 import { ToastContainer } from "react-toastify";
 import ProductDetails from "./Pages/ProductDetails/ProductDetails";
 import RequireAuth from "./Pages/RequireAuth/RequireAuth";
+import AddProduct from "./Pages/AddProduct/AddProduct";
 
 function App() {
   return (
@@ -34,6 +35,14 @@ function App() {
           element={
             <RequireAuth>
               <ProductDetails></ProductDetails>
+            </RequireAuth>
+          }
+        ></Route>
+        <Route
+          path="/addproduct"
+          element={
+            <RequireAuth>
+              <AddProduct></AddProduct>
             </RequireAuth>
           }
         ></Route>
