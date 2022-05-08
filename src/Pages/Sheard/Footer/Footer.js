@@ -1,11 +1,15 @@
-import React from 'react';
+import React from "react";
 
 const Footer = () => {
-    return (
-        <div>
-            <h2>This Is Footer</h2>
-        </div>
-    );
+  const today = new Date();
+  const year = today.getFullYear();
+  return (
+    <footer className='d-flex justify-content-center'>
+      <p>
+        <small>Copywrite © {year} Plumber David</small>
+      </p>
+    </footer>
+  );
 };
 
 export default Footer;

@@ -37,9 +37,9 @@ const Product = ({ product }) => {
           <Card.Text>Supplier: {supplierName}</Card.Text>
           <div className="d-flex justify-content-between">
             <Link to={`/products/${_id}`}>
-              <button>Stock Update</button>
+              <button className='btn btn-dark'>Stock Update</button>
             </Link>
-            <button onClick={()=> handleDelete(product._id)}>Delete Item</button>
+            <button className='btn btn-dark' onClick={()=> handleDelete(product._id)}>Delete Item</button>
           </div>
         </Card.Body>
       </Card>

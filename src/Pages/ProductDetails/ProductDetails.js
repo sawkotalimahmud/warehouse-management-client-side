@@ -29,13 +29,13 @@ const ProductDetails = () => {
           <Card.Text>{product.description}</Card.Text>
           <Card.Text>Supplier: {product.supplierName}</Card.Text>
           <div>
-            <button className="w-100 mb-2" onClick={handleDecrement}>Delivered</button>
+            <button className="w-100 mb-2 btn btn-dark" onClick={handleDecrement}>Delivered</button>
           </div>
-          <div>
-              <input className="w-50" type="number" />
-              <button className="w-50">Add Item</button>
+          <div className="d-grid gap-3">
+              <input className="w-100" type="number" />
+              <button className="w-100 btn btn-dark">Add Item</button>
             </div>
-            <Link to={'/products'}><button className="w-100 mt-2">Manage Inventories</button></Link>
+            <Link to={'/products'}><button className="w-100 mt-2 btn btn-dark">Manage Inventories</button></Link>
         </Card.Body>
       </Card>
     </div>

@@ -1,5 +1,6 @@
 import React from "react";
 import { useForm } from "react-hook-form";
+import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
 
 const AddProduct = () => {
@@ -22,8 +23,8 @@ const AddProduct = () => {
       });
   };
   return (
-    <div className="w-50 mx-auto">
-      <h2>Add New Product</h2>
+    <div className="w-50 mx-auto mt-5">
+      <h2 className="text-center">Add New Product</h2>
       <form className="d-flex flex-column" onSubmit={handleSubmit(onSubmit)}>
         <input
           className="mb-2"
@@ -59,7 +60,8 @@ const AddProduct = () => {
           type="text"
           {...register("supplier")}
         />
-        <input type="submit" value="Add Product" />
+        <input className='btn btn-dark' type="submit" value="Add Product" />
+        <Link to={'/products'}><button className="w-100 mt-2 btn btn-dark">Manage Inventories</button></Link>
       </form>
     </div>
   );

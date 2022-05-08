@@ -1,5 +1,9 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
+import HomePageProducts from '../../HomePageProducts/HomePageProducts';
+import Product from '../../Product/Product';
 import Banner from '../Banner/Banner';
+
 
 const Home = () => {
     const [products, setProducts] = useState([]);
@@ -9,13 +13,19 @@ const Home = () => {
         .then(res => res.json())
         .then(data => setProducts(data))
     },[])
-    const newProduct = products.slice(0,6);
-    console.log(newProduct);
-    
     return (
         <div>
             <Banner></Banner>
-            
+            <div className='product-container mt-5'>
+                {
+                    products.slice(0, 6).map((product) =>(
+                        <HomePageProducts key={product._id} product={product}></HomePageProducts>
+                    ))
+                }
+            </div>
+            <div className=" d-flex justify-content-center m-5">
+            <Link to={'/products'}><button className=" btn btn-dark">Manage Inventories</button></Link>
+            </div>
             
         </div>
     );
