@@ -9,6 +9,7 @@ import Products from './Pages/Products/Products';
 import SignUp from './Pages/SignUp/SignUp';
 import PageNotFound from './Pages/Sheard/PageNotFound/PageNotFound';
 import { ToastContainer } from 'react-toastify';
+import ProductDetails from './Pages/ProductDetails/ProductDetails';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/signup' element={<SignUp></SignUp>}></Route>
         <Route path='/products' element={<Products></Products>}></Route>
+        <Route path='/products/:id' element={<ProductDetails></ProductDetails>}></Route>
         <Route path='*' element={<PageNotFound></PageNotFound>}></Route>
       </Routes>
       <Footer></Footer>
