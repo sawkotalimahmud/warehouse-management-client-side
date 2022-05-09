@@ -13,6 +13,7 @@ import ProductDetails from "./Pages/ProductDetails/ProductDetails";
 import RequireAuth from "./Pages/RequireAuth/RequireAuth";
 import AddProduct from "./Pages/AddProduct/AddProduct";
 import Blog from "./Pages/Blog/Blog";
+import About from "./Pages/About/About";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/home" element={<Home></Home>}></Route>
         <Route path="/blog" element={<Blog></Blog>}></Route>
         <Route path="/login" element={<Login></Login>}></Route>
+        <Route path="/about" element={<About></About>}></Route>
         <Route path="/signup" element={<SignUp></SignUp>}></Route>
         <Route
           path="/products"
