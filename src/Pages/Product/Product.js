@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 const Product = ({ product }) => {
@@ -21,13 +20,14 @@ const Product = ({ product }) => {
         .then((data) => {
           console.log(data);
           const remaining = products.filter((product) => product._id !== id);
+          console.log(product._id, id);
           setProducts(remaining);
         });
     }
   };
 
   return (
-    <div className="col-md-4">
+    <div className="col-md-4 ">
       <div className="card shadow-sm card-style">
         <img className="card-img-top" src={picture} alt="" />
         <div className="card-body">
@@ -48,25 +48,6 @@ const Product = ({ product }) => {
         </div>
       </div>
     </div>
-
-    // <div className="container">
-    //   <Card style={{ width: "20rem" }}>
-    //     <Card.Img variant="top" src={picture} />
-    //     <Card.Body>
-    //       <Card.Title>{name}</Card.Title>
-    //       <Card.Text>Price: ${price}</Card.Text>
-    //       <Card.Text>Quantity: {quantity}</Card.Text>
-    //       <Card.Text>{description}</Card.Text>
-    //       <Card.Text>Supplier: {supplierName}</Card.Text>
-    //       <div className="d-flex justify-content-between">
-    //         <Link to={`/products/${_id}`}>
-    //           <button className='btn btn-dark'>Stock Update</button>
-    //         </Link>
-    //         <button className='btn btn-dark' onClick={()=> handleDelete(product._id)}>Delete Item</button>
-    //       </div>
-    //     </Card.Body>
-    //   </Card>
-    // </div>
   );
 };
 

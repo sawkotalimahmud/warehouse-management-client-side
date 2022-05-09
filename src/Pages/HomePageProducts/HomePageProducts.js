@@ -11,9 +11,9 @@ const HomePageProducts = ({ product }) => {
         <div className="card-body">
           <h5 className="card-title">{name}</h5>
           <p className="card-text">{description}</p>
-          <p className="card-text">{quantity}</p>
-          <p className="card-text">{supplier}</p>
-          <h6>${price}</h6>
+          <p className="card-text">Quantity: {quantity}</p>
+          <p className="card-text">Supplier Name: {supplier}</p>
+          <h6>Price: ${price}</h6>
           <Link to={`/products/${_id}`}>
             <button className="btn btn-dark">Stock Update</button>
           </Link>

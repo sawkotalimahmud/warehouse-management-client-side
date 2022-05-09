@@ -13,7 +13,7 @@ const Home = () => {
       .then((data) => setProducts(data));
   }, []);
   return (
-    <div>
+    <div className="bg-dark">
       <Banner></Banner>
       <div className="container mt-3">
         <div className=" row text-center mt-5 g-4 d-flex justify-content-center align-items-center">

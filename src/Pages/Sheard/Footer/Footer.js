@@ -4,9 +4,9 @@ const Footer = () => {
   const today = new Date();
   const year = today.getFullYear();
   return (
-    <footer className='d-flex justify-content-center'>
-      <p>
-        <small>Copywrite © {year} Plumber David</small>
+    <footer className='d-flex justify-content-center bg-dark text-white mt-3'>
+      <p className="m-3">
+        <small>Copywrite © {year} Sarah Enterprise</small>
       </p>
     </footer>
   );

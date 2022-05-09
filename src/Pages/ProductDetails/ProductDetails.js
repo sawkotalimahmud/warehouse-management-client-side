@@ -52,7 +52,7 @@ const ProductDetails = () => {
   }
 
   return (
-    <div className="d-flex justify-content-center m-3">
+    <div className="d-flex justify-content-center m-3 ">
       <Card style={{ width: "20rem" }}>
         <Card.Img variant="top" src={picture} />
         <Card.Body>

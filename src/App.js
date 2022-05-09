@@ -14,6 +14,7 @@ import RequireAuth from "./Pages/RequireAuth/RequireAuth";
 import AddProduct from "./Pages/AddProduct/AddProduct";
 import Blog from "./Pages/Blog/Blog";
 import About from "./Pages/About/About";
+import YourProducts from "./Pages/YourProducts/YourProducts";
 
 function App() {
   return (
@@ -47,6 +48,14 @@ function App() {
           element={
             <RequireAuth>
               <AddProduct></AddProduct>
+            </RequireAuth>
+          }
+        ></Route>
+        <Route
+          path="/yourproducts"
+          element={
+            <RequireAuth>
+              <YourProducts></YourProducts>
             </RequireAuth>
           }
         ></Route>

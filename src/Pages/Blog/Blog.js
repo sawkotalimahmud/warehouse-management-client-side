@@ -3,7 +3,7 @@ import { Table } from "react-bootstrap";
 
 const Blog = () => {
   return (
-    <div className="w-75 mx-auto">
+    <div className="w-75 mx-auto ">
       <div className="mt-5">
         <div className="text-center mb-3">
           <h2>1. Question: Difference between javascript and nodejs</h2>

@@ -23,7 +23,7 @@ const AddProduct = () => {
       });
   };
   return (
-    <div className="w-50 mx-auto mt-5">
+    <div className="w-50 mx-auto mt-5 ">
       <h2 className="text-center">Add New Product</h2>
       <form className="d-flex flex-column" onSubmit={handleSubmit(onSubmit)}>
         <input
@@ -59,6 +59,12 @@ const AddProduct = () => {
           placeholder="Supplier"
           type="text"
           {...register("supplier")}
+        />
+        <input
+          className="mb-2"
+          placeholder="Email"
+          type="text"
+          {...register("email")}
         />
         <input type="submit" value="Add Product" />
         
