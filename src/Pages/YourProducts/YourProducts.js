@@ -12,7 +12,7 @@ const YourProducts = () => {
         const getYourProducts = async () => {
             const email = user?.email
             console.log(email);
-            const url= `http://localhost:5000/yourproducts?email=${email}`
+            const url= `https://young-shore-96623.herokuapp.com/yourproducts?email=${email}`
             const {data} = await axios.get(url)
             setYourProducts(data)
         }

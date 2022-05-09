@@ -8,7 +8,7 @@ const ProductDetails = () => {
   const {picture, price, name, quantity, description, supplier} = inventory
 
   useEffect(() => {
-    const url = `http://localhost:5000/products/${id}`;
+    const url = `https://young-shore-96623.herokuapp.com/products/${id}`;
     fetch(url)
       .then((res) => res.json())
       .then((data) => setInventory(data));
@@ -19,7 +19,7 @@ const ProductDetails = () => {
     let remaing = parseInt(+inventory.quantity) -1
     let newRemaing = {picture, price, name, quantity:remaing, description, supplier};
     setInventory(newRemaing)
-    fetch(`http://localhost:5000/products/${id}`, {
+    fetch(`https://young-shore-96623.herokuapp.com/products/${id}`, {
       method: "PUT",
       body: JSON.stringify(newRemaing),
       headers: {
@@ -37,7 +37,7 @@ const ProductDetails = () => {
     let remaing = parseInt(+inventory.quantity) + parseInt(event.target.number.value)
     let newRemaing = {picture, price, name, quantity:remaing, description, supplier};
     setInventory(newRemaing)
-    fetch(`http://localhost:5000/products/${id}`, {
+    fetch(`https://young-shore-96623.herokuapp.com/products/${id}`, {
       method: "PUT",
       body: JSON.stringify(newRemaing),
       headers: {

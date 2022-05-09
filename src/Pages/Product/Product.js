@@ -12,7 +12,7 @@ const Product = ({ product }) => {
     const proceed = window.confirm("Are You Sure?");
 
     if (proceed) {
-      const url = `http://localhost:5000/products/${id}`;
+      const url = `https://young-shore-96623.herokuapp.com/products/${id}`;
       fetch(url, {
         method: "DELETE",
       })

@@ -8,7 +8,7 @@ const AddProduct = () => {
 
   const onSubmit = (data) => {
     console.log(data);
-    const url = `http://localhost:5000/products`;
+    const url = `https://young-shore-96623.herokuapp.com/products`;
     fetch(url, {
       method: "POST",
       headers: {
