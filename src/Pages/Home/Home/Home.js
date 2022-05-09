@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import HomePageProducts from "../../HomePageProducts/HomePageProducts";
 import Banner from "../Banner/Banner";
+import HomeSection from "../HomeSection/HomeSection";
 import Banner2 from "./Banner2/Banner2";
 
 const Home = () => {
@@ -15,6 +16,7 @@ const Home = () => {
   return (
     <div className="bg-dark">
       <Banner></Banner>
+      <HomeSection></HomeSection>
       <div className="container mt-3">
         <div className=" row text-center mt-5 g-4 d-flex justify-content-center align-items-center">
           {products.slice(0, 6).map((product) => (
