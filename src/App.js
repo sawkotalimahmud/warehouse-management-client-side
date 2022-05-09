@@ -12,6 +12,7 @@ import { ToastContainer } from "react-toastify";
 import ProductDetails from "./Pages/ProductDetails/ProductDetails";
 import RequireAuth from "./Pages/RequireAuth/RequireAuth";
 import AddProduct from "./Pages/AddProduct/AddProduct";
+import Blog from "./Pages/Blog/Blog";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>
         <Route path="/home" element={<Home></Home>}></Route>
+        <Route path="/blog" element={<Blog></Blog>}></Route>
         <Route path="/login" element={<Login></Login>}></Route>
         <Route path="/signup" element={<SignUp></SignUp>}></Route>
         <Route

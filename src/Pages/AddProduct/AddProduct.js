@@ -29,7 +29,7 @@ const AddProduct = () => {
         <input
           className="mb-2"
           placeholder="Name"
-          {...register("name", { required: true, maxLength: 20 })}
+          {...register("name", { required: true, maxLength: 250 })}
         />
         <textarea
           className="mb-2"
@@ -60,9 +60,10 @@ const AddProduct = () => {
           type="text"
           {...register("supplier")}
         />
-        <input className='btn btn-dark' type="submit" value="Add Product" />
-        <Link to={'/products'}><button className="w-100 mt-2 btn btn-dark">Manage Inventories</button></Link>
+        <input type="submit" value="Add Product" />
+        
       </form>
+      <Link to={'/products'}><button className="w-100 mt-2 btn btn-dark">Manage Inventories</button></Link>
     </div>
   );
 };

@@ -1,9 +1,7 @@
-/* .product-container{
-    margin: 0;
-    padding: 0;
+.product-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 50px;
+    grid-gap: 5px;
 }
 @media only screen and (max-width:576px) {
     .product-container{
@@ -15,4 +13,4 @@
     .product-container{
         grid-template-columns: repeat(2, 1fr);
     }
-} */
+}

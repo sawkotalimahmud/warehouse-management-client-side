@@ -30,7 +30,9 @@ const Login = () => {
     if(loading||sending){
         return <Loading></Loading>
     }
-
+    if(user){
+      navigate("/");
+    }
     // if (token) {
     //     navigate(from, { replace: true });
     // }
@@ -48,7 +50,7 @@ const Login = () => {
         const password = passwordRef.current.value;
 
         await signInWithEmailAndPassword(email, password);
-        navigate("/");
+        
     }
 
     const navigateSignUp = event => {
