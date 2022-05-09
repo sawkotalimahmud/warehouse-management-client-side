@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import HomePageProducts from "../../HomePageProducts/HomePageProducts";
-import Product from "../../Product/Product";
 import Banner from "../Banner/Banner";
+import Banner2 from "./Banner2/Banner2";
 
 const Home = () => {
   const [products, setProducts] = useState([]);
@@ -30,6 +30,7 @@ const Home = () => {
           <button className=" btn btn-dark">Manage Inventories</button>
         </Link>
       </div>
+      <Banner2></Banner2>
     </div>
   );
 };
